@@ -1,0 +1,22 @@
+<html>
+<body>
+    <div id="TOP">
+    Xin chào các bạn! Chào bé, bé Lê Zăn Đạt<br>
+    Chị zẫn khỏe, em còn làm ở đó hông ta?
+    </div>
+    <br><input type="button" value="Dạ khỏe" id="btn-append"/>
+<script language="javascript">
+    // Lấy button
+    var button = document.getElementById("btn-append");
+    // Thêm sự kiện click cho button
+    button.addEventListener("click", function(){
+    // Tạo mới một thẻ h1
+    var h2 = document.createElement("h2");
+    // Thêm nội dung HTML vào thẻ h1
+    h2.innerHTML = "Ừa chị buồn quá hông biết đi đâu chơi. Nên mở điện thoại lai chim cùng các bạn nè"
+    // Đưa thẻ h1 vào trong thẻ div có id=TOP
+    document.getElementById('TOP').appendChild(h2);
+    });
+</script>
+</body>
+</html>
